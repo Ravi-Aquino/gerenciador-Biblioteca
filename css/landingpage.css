@@ -1,0 +1,54 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=Playfair+Display:wght@400;500;600;700&display=swap');
+
+*{
+    margin: 0;
+    padding: 0;
+}
+.nav {
+    position: absolute;
+    display: flex;
+    justify-content: center;
+    height: 10vh;
+    width: 100%;
+    background-color: #2a2116;
+    z-index: 100;
+    margin: 0;
+}
+.nav-link a{
+    font-size: 13.5px;
+    text-decoration: none;
+    font-family: "Inter", sans-serif;
+    color: #EDE7E0;
+    
+}
+.nav-list{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 5rem;
+    list-style: none;
+    font-family: 'Inter';
+    margin: 0;
+}
+
+.hero{
+    position: absolute;
+    background-image: url(/assets/hero-BG.png);
+    height: 100vh;
+    width: 100%;
+    background-size: cover;
+    background-position: center;
+}
+
+.hero-texts{
+    margin-top: 10rem;
+    margin-left: 5rem;
+}
+.hero-texts span{
+    color: #DAA017;
+}
+
+.hero-title{
+    color: #EDE7E0;
+    font-family: 'Inter';
+}

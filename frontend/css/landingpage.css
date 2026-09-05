@@ -10,7 +10,8 @@
     justify-content: center;
     height: 10vh;
     width: 100%;
-    background-color: #2a2116;
+    background-color: transparent;
+    
     z-index: 100;
     margin: 0;
 }
@@ -33,7 +34,7 @@
 
 .hero{
     position: absolute;
-    background-image: url(/assets/hero-BG.png);
+    background-image: url(/frontend/assets/hero-BG.png);
     height: 100vh;
     width: 100%;
     background-size: cover;

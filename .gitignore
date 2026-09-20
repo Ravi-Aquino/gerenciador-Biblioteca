@@ -2,6 +2,7 @@
 # Ambiente / Secrets
 # =========================
 
+backend/.env
 .env
 .env.*
 !.env.example

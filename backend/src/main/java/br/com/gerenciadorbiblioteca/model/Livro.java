@@ -1,4 +1,4 @@
-package model;
+package br.com.gerenciadorbiblioteca.model;
 
 public class Livro {
     private long id;

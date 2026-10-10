@@ -1,4 +1,4 @@
-package Repository;
+package br.com.gerenciadorbiblioteca.config;
 
 import java.sql.Connection;
 import java.sql.DriverManager;

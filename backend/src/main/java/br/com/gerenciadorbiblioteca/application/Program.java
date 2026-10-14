@@ -1,6 +1,7 @@
 package br.com.gerenciadorbiblioteca.application;
 
 import br.com.gerenciadorbiblioteca.config.ConnectionFactory;
+import br.com.gerenciadorbiblioteca.repository.AdministradorRepository;
 
 import java.sql.Connection;
 import java.sql.SQLException;

@@ -1,0 +1,10 @@
+.paneLogin {
+    -fx-background-image: url(../images/notebookBG.png);
+    -fx-background-position: center;
+    -fx-background-size: cover;
+    -fx-background-repeat: no-repeat;
+}
+.paneFade{
+    -fx-background-color: #000000;
+    -fx-opacity: 0.3;
+}

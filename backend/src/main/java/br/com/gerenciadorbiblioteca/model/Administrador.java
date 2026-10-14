@@ -15,6 +15,9 @@ public class Administrador {
         this.senha = senha;
         this.status = status;
     }
+    public Administrador(){
+
+    }
 
     //---------------------------------------------------------------------
 
@@ -48,6 +51,14 @@ public class Administrador {
 
     public void setStatus(StatusAdmin status) {
         this.status = status;
+    }
+
+    public String getSenha() {
+        return senha;
+    }
+
+    public void setSenha(String senha) {
+        this.senha = senha;
     }
 
     //---------------------------------------------------------------------

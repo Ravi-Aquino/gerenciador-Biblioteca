@@ -1,24 +1,38 @@
 package br.com.gerenciadorbiblioteca.config;
 
 import java.sql.Connection;
-import java.sql.DriverManager;
 import java.sql.SQLException;
 import io.github.cdimascio.dotenv.Dotenv;
+import com.zaxxer.hikari.HikariConfig;
+import com.zaxxer.hikari.HikariDataSource;
+import javax.sql.DataSource;
 
 public class ConnectionFactory {
 
     private static final Dotenv dotenv = Dotenv.configure().load();
 
-    private static final String HOST = dotenv.get("DB_HOST");
-    private static final String PORT = dotenv.get("DB_PORT");
-    private static final String DATABASE = dotenv.get("DB_DATABASE");
-    private static final String USER = dotenv.get("DB_USER");
-    private static final String PASSWORD = dotenv.get("DB_PASSWORD");
+    private static final DataSource dataSource;
 
+    static {
+        HikariConfig config = new HikariConfig();
+        config.setJdbcUrl("jdbc:postgresql://" + dotenv.get("DB_HOST")
+                + ":" + dotenv.get("DB_PORT")
+                + "/" + dotenv.get("DB_DATABASE"));
+        config.setUsername(dotenv.get("DB_USER"));
+        config.setPassword(dotenv.get("DB_PASSWORD"));
+        config.setMaximumPoolSize(10);
+        config.setMinimumIdle(2);
+        config.setConnectionTimeout(30000);
+        dataSource = new HikariDataSource(config);
+    }
 
-    private static final String URL = "jdbc:postgresql://"+HOST+":"+PORT+"/"+DATABASE;
+    private ConnectionFactory() { }
 
-    public static Connection getConnection() throws SQLException{
-        return DriverManager.getConnection(URL, USER, PASSWORD);
+    public static Connection getConnection() throws SQLException {
+        return dataSource.getConnection();
+    }
+
+    public static void close() {
+        ((HikariDataSource) dataSource).close();
     }
 }

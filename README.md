@@ -17,7 +17,7 @@ O projeto tem como objetivo desenvolver uma aplicação capaz de gerenciar o ace
 
 ## ⚙️ Tecnologias
 
-- **Java 17** — linguagem de programação.
+- **Java 26** — linguagem de programação.
 - **Maven** — gerenciamento de dependências e build.
 - **PostgreSQL** — banco de dados relacional.
 - **JDBC** — comunicação entre Java e PostgreSQL.
@@ -96,10 +96,7 @@ SistemaBiblioteca/
 - `service`: concentra as regras de negócio.
 - `repository`: executa operações de persistência e consultas ao banco.
 - `model`: representa as entidades do domínio.
-- `dto`: define objetos utilizados na transferência de dados, quando necessários.
-- `exception`: organiza exceções específicas da aplicação.
 - `config`: concentra configurações, incluindo a conexão com o banco.
-- `util`: reúne utilitários de uso geral.
 
 A estrutura poderá evoluir conforme as necessidades da implementação.
 
@@ -128,7 +125,7 @@ As credenciais do banco devem ser configuradas localmente por meio de variáveis
 
 ### Pré-requisitos
 
-- JDK 17 ou compatível com a versão configurada no projeto.
+- JDK 26 ou compatível com a versão configurada no projeto.
 - Maven.
 - PostgreSQL.
 - Um cliente para executar e administrar comandos SQL, como pgAdmin.
@@ -136,7 +133,7 @@ As credenciais do banco devem ser configuradas localmente por meio de variáveis
 ### 1. Clone o repositório
 
 ```bash
-git clone <URL_DO_REPOSITORIO>
+git clone https://github.com/Ravi-Aquino/gerenciador-Biblioteca/edit/main/README.md
 cd SistemaBiblioteca
 ```
 
@@ -153,8 +150,6 @@ Execute os scripts na seguinte ordem:
 
 Use o arquivo `.env.example` como referência para criar seu `.env` local. Preencha as variáveis necessárias para a conexão com o PostgreSQL.
 
-Não compartilhe o arquivo `.env`, pois ele pode conter credenciais.
-
 ### 4. Execute a aplicação
 
 Entre na pasta do backend e execute:
@@ -163,20 +158,6 @@ Entre na pasta do backend e execute:
 cd backend
 mvn clean compile
 ```
-
-A compilação verifica se o código compila corretamente. A forma de iniciar a aplicação dependerá da implementação da classe principal.
-
-## 🧭 Próximas etapas
-
-- [ ] Validar a conexão com o PostgreSQL.
-- [ ] Implementar o acesso a dados do administrador.
-- [ ] Implementar o login.
-- [ ] Desenvolver o gerenciamento de livros.
-- [ ] Desenvolver o gerenciamento de autores e categorias.
-- [ ] Desenvolver o gerenciamento de exemplares e usuários.
-- [ ] Implementar empréstimos e devoluções.
-- [ ] Criar testes automatizados.
-- [ ] Documentar as decisões de arquitetura e as regras de negócio.
 
 ## 📖 Documentação
 

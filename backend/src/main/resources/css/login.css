@@ -1,10 +1,17 @@
 .paneLogin {
-    -fx-background-image: url(../images/notebookBG.png);
-    -fx-background-position: center;
+    -fx-background-image: url(../images/bibliotecaLoginBg.png);
     -fx-background-size: cover;
     -fx-background-repeat: no-repeat;
 }
 .paneFade{
     -fx-background-color: #000000;
     -fx-opacity: 0.3;
+}
+.textField{
+    -fx-text-fill: white;
+}
+.textField {
+    -fx-cursor: text;
+    -fx-highlight-fill: #404040; /* cor de seleção */
+    -fx-highlight-text-fill: white; /* texto selecionado */
 }

@@ -19,23 +19,23 @@
       <StackPane layoutX="10.0" layoutY="10.0" prefHeight="738.0" prefWidth="1187.0" styleClass="paneLogin" stylesheets="@../css/login.css" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="0.0">
          <children>
             <Pane prefHeight="200.0" prefWidth="200.0" styleClass="paneFade" />
-            <VBox alignment="CENTER" maxHeight="-Infinity" maxWidth="440.0" minHeight="-Infinity" minWidth="280.0" prefHeight="371.0" prefWidth="380.0" spacing="10.0" style="-fx-background-color: #1A2332; -fx-background-radius: 20px; -fx-border-radius: 20px; -fx-border-color: #2A3A4B;">
+            <VBox alignment="CENTER" maxHeight="-Infinity" maxWidth="440.0" minHeight="-Infinity" minWidth="280.0" prefHeight="472.0" prefWidth="559.0" spacing="10.0" style="-fx-background-color: #1A2332; -fx-background-radius: 20px; -fx-border-radius: 20px; -fx-border-color: #2A3A4B;">
                <children>
-                  <HBox alignment="CENTER_RIGHT" prefHeight="100.0" prefWidth="294.0">
+                  <HBox alignment="CENTER" prefHeight="100.0" prefWidth="294.0">
                      <children>
-                        <ImageView fitHeight="100.0" fitWidth="120.0" pickOnBounds="true">
+                        <ImageView fitHeight="130.0" fitWidth="148.0" pickOnBounds="true">
                            <image>
                               <Image url="@../images/logo.png" />
                            </image>
                         </ImageView>
-                        <VBox alignment="CENTER_LEFT" prefHeight="95.0" prefWidth="194.0">
+                        <VBox alignment="CENTER_LEFT" prefHeight="130.0" prefWidth="106.0">
                            <children>
-                              <Label text="Sistema" textFill="WHITE" VBox.vgrow="ALWAYS">
+                              <Label prefHeight="26.0" prefWidth="82.0" text="Sistema" textFill="WHITE" VBox.vgrow="ALWAYS">
                                  <font>
                                     <Font size="24.0" />
                                  </font>
                               </Label>
-                              <Label prefHeight="35.0" prefWidth="123.0" text="Biblioteca" textFill="#ffc300">
+                              <Label prefHeight="23.0" prefWidth="123.0" text="Biblioteca" textFill="#ffc300">
                                  <font>
                                     <Font size="24.0" />
                                  </font>
@@ -58,15 +58,24 @@
                      </font>
                   </Label>
                   <Label fx:id="lblErro" prefHeight="18.0" prefWidth="300.0" text="ERRO: preencha os campos" textFill="RED" underline="true" visible="false" />
-                  <VBox alignment="CENTER" fillWidth="false" maxWidth="1.7976931348623157E308" prefHeight="156.0" prefWidth="266.0" spacing="15.0">
+                  <VBox alignment="CENTER" fillWidth="false" maxHeight="1.7976931348623157E308" maxWidth="1.7976931348623157E308" prefHeight="136.0" prefWidth="401.0" spacing="10.0">
                      <children>
-                        <TextField fx:id="usuarioField" maxWidth="1.7976931348623157E308" minWidth="0.0" prefHeight="26.0" prefWidth="300.0" promptText="email" />
-                        <PasswordField fx:id="senhaField" maxWidth="1.7976931348623157E308" minWidth="0.0" prefWidth="300.0" promptText="Senha" />
-                        <Button fx:id="entrarBtn" maxWidth="1.7976931348623157E308" minWidth="0.0" mnemonicParsing="false" onAction="#fazerLogin" prefHeight="33.0" prefWidth="300.0" text="Entrar" />
+                        <TextField fx:id="usuarioField" maxWidth="1.7976931348623157E308" minWidth="0.0" prefHeight="48.0" prefWidth="300.0" promptText="email" style="-fx-background-color: #111827; -fx-background-radius: 5; -fx-border-color: #2A3A4B; -fx-border-radius: 5px;" styleClass="textField" />
+                        <PasswordField fx:id="senhaField" maxWidth="1.7976931348623157E308" minWidth="0.0" prefHeight="48.0" prefWidth="300.0" promptText="Senha" style="-fx-background-color: #111827; -fx-background-radius: 5px; -fx-border-color: #2A3A4B; -fx-border-radius: 5px;" styleClass="textField" />
+                        <Button fx:id="entrarBtn" maxWidth="1.7976931348623157E308" minWidth="0.0" mnemonicParsing="false" onAction="#fazerLogin" prefHeight="32.0" prefWidth="300.0" style="-fx-background-color: #D4A259; -fx-text-fill: #FFF;" text="Entrar">
+                           <font>
+                              <Font size="18.0" />
+                           </font></Button>
                      </children>
                      <VBox.margin>
                         <Insets />
                      </VBox.margin>
+                     <opaqueInsets>
+                        <Insets />
+                     </opaqueInsets>
+                     <padding>
+                        <Insets bottom="10.0" />
+                     </padding>
                   </VBox>
                </children>
                <padding>

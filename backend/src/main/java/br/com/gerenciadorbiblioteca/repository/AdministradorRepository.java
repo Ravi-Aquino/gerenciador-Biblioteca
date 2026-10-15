@@ -8,6 +8,7 @@ import java.sql.*;
 import java.util.Optional;
 
 public class AdministradorRepository {
+
     public Optional<Administrador> buscarPorEmail(String email) {
         String sql = "SELECT nome, email, senha FROM administradores WHERE email = ?";
 

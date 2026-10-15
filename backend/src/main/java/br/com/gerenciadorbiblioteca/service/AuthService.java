@@ -18,6 +18,6 @@ public class AuthService {
         }
         Administrador admin = resultado.get();
 
-        return admin.getSenha().equals(senha);
+        return  admin.getSenha().equals(senha);
     }
 }
